@@ -1,0 +1,47 @@
+.sign-up {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+
+  & .confirm-div {
+    position: relative;
+
+    & .confirm-label {
+      position: absolute;
+      bottom: -20px;
+      font-size: 16px;
+      color: red;
+      font-weight: bolder;
+    }
+  }
+
+  & .last-formInput {
+    background: none;
+    background-color: white;
+    color: grey;
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    margin-top: 25px;
+    margin-bottom: 0;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ .form-input-label {
+      position: absolute;
+      top: -16px;
+      color: black;
+      font-size: 14px;
+    }
+  }
+
+  & .title {
+    margin: 10px 0;
+  }
+}
